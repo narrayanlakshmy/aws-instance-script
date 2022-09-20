@@ -1,9 +1,5 @@
-resource "aws_vpc" "main" {
-  cidr_block       = "10.0.0.0/16"
-  instance_tenancy = "default"
-
-  tags = {
-    Name = "demo-vpc"
-    Purpose = "Jenkins Demo"
-  }
+resource "aws_instance" "web1" {
+  ami      = "${lookup(var.ami_id, var.region)}"
+  instance_type = "t2.micro"
 }
+
