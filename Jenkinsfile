@@ -15,7 +15,7 @@ pipeline {
    agent  any
         options {
                 timestamps ()
-                buildDiscarder('xterm')
+                ansiColor()
             }
     stages {
         stage('checkout') {
