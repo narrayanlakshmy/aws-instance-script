@@ -15,7 +15,6 @@ pipeline {
    agent  any
         options {
                 timestamps ()
-                ansiColor()
             }
     stages {
         stage('checkout') {
