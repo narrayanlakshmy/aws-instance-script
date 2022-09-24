@@ -9,7 +9,3 @@ variable "AWS_SECRET_ACCESS_KEY"{
 variable "vpc_cidr"{
   default = "10.0.0.0/16"
 }
-
-variable "var.tenancy"{
-  default = "default"
-}
