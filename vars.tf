@@ -1,3 +1,5 @@
+instance_type = "${var.tenancy}"
+
 variable "AWS_ACCESS_KEY_ID" {
   default = "AKIA6M4VVQ33EZHKC3JH"
 }
@@ -8,4 +10,7 @@ variable "AWS_SECRET_ACCESS_KEY"{
 
 variable "vpc_cidr"{
   default = "10.0.0.0/16"
+}
+variable "tenancy"{
+  instance_tenancy = "deafult"
 }
