@@ -1,5 +1,3 @@
-instance_type = "${var.tenancy}"
-
 variable "AWS_ACCESS_KEY_ID" {
   default = "AKIA6M4VVQ33EZHKC3JH"
 }
